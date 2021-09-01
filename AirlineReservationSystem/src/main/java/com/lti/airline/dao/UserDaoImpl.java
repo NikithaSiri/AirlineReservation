@@ -29,7 +29,7 @@ public class UserDaoImpl implements UserDao {
 	@Transactional
 	public String saveUser(Users user) {
 		// TODO Auto-generated method stub	
-     	System.out.println("Dao Layer --> " + user);
+     	System.out.println("Dao Layer--> " + user);
 		em.persist(user);
 		return "User Added Successfully!!!";
 	}
